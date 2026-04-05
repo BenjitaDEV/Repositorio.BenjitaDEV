@@ -12,7 +12,7 @@ import com.Banco.ProyectoBanco.model.Cuenta;;
 @Repository
 public class CuentaRepository {
     //metodos
-    private List<Cuenta> listaCuentas = new ArrayList<Cuenta>();
+    private List<Cuenta> listaCuentas = new ArrayList<>();
 
     //listar todas las cuentas, devuelve lista
     public List<Cuenta> obtenerCuentas(){

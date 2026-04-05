@@ -7,17 +7,19 @@ import org.springframework.stereotype.Service;
 
 import com.Banco.ProyectoBanco.model.Cuenta;
 import com.Banco.ProyectoBanco.repository.CuentaRepository;
-import com.Banco.ProyectoBanco.model.Transaccion;
-import com.Banco.ProyectoBanco.repository.TransaccionRepository;
 
 @Service
 public class CuentaService {
     @Autowired
     private CuentaRepository cuentaRepository;
 
+    //AGREGAR METODOS
+    //LISTA
     public List<Cuenta> getCuenta(){
         return cuentaRepository.obtenerCuentas();
     }
+
+    //BUSCAR POR ID
 
     public Cuenta getCuentaId(int id){
         return cuentaRepository.BuscarPorId(id);
